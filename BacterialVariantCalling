@@ -1,0 +1,50 @@
+Option 1: GATK Best Practices
+Tools:
+Trimmomatic
+FastQC
+PicardTools
+GATK
+TRAMS
+
+Workflow:
+0) download/setup 
+ a) reference genome (fasta) 
+ b) reference GBK
+ c) dbSNP (or blank.vcf if none)
+
+1) Trimmomatic
+#assuming Truseq3 adapters, single ended, adapt as needed
+ILLUMINACLIP:TruSeq3-SE:2:30:10 LEADING:3 TRAILING:3 MINLEN:75
+
+2)Fastqc
+
+3)BWA mem to reference genome (using read groups)
+
+4) PICARDTOOLS
+ a) SortSAM
+ b) MarkDuplicates
+ c) BuildBamIndex
+
+5) GATK
+ a) RealignerTargetCreator
+ b) IndelRealigner
+ c) BaseRecalibrator -o prelimTable
+ d) BaseRecalibrator -BQSR -o post_proc
+ e) PrintReads 
+
+6) Picardtools
+ a) BuildBamIndex
+
+7) GATK 
+ a) HaplotypeCaller
+#if multiple samples:
+ b) CombineGVCFs
+ c) GenotypeGVCFs
+ d) VariantAnnotator
+ e) VariantEval
+ f) VariantsToTable
+
+8) TRAMS (plus custom script)
+ a) custom perl vcf2trams.pl (makes trams compatable file)
+ b) TRAMS.py 
+
