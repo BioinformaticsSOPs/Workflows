@@ -1,0 +1,18 @@
+Software:
+
+Trimmomatic/FastQC
+BWA
+TransSPADES
+Salmon
+EdgeR/DESeq
+TransRate
+
+Workflow:
+1) Trim/QA/QC (should be it's own module)
+2) TransSpades
+3) TransRate (?)
+4) bwa reads to assembly
+5) Salmon on BAM
+6) EdgeR/DeSeq on Salmon outputs
+
+
