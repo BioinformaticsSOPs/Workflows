@@ -1,11 +1,12 @@
 #Option 1: GATK Best Practices
-##|Tools:
------------
-| Trimmomatic |
-| FastQC |
-| PicardTools |
-| GATK |
-| TRAMS |
+
+|Tools | Links | License |
+|:-------------:|------------------| -------------------------|
+| Trimmomatic | http://www.usadellab.org/cms/uploads/supplementary/Trimmomatic/Trimmomatic-0.35.zip|  ??? |
+| FastQC | http://www.bioinformatics.babraham.ac.uk/projects/download.html | GPL 3.0 | 
+| PicardTools | http://broadinstitute.github.io/picard/ | GPL 3.0 | 
+| GATK | https://www.broadinstitute.org/gatk/download/ | GPL 3.0 | 
+| TRAMS |http://dx.doi.org/10.6084/m9.figshare.782261 |  CC-By |
 
 Workflow:
 
