@@ -1,6 +1,7 @@
 #Option 1: GATK Best Practices
-##|Tools:
------------
+
+|Tools: |
+|-------------|
 | Trimmomatic |
 | FastQC |
 | PicardTools |
