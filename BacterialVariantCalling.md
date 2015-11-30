@@ -1,5 +1,5 @@
-Option 1: GATK Best Practices
-Tools:
+#Option 1: GATK Best Practices
+##Tools:
 Trimmomatic
 FastQC
 PicardTools
@@ -7,6 +7,7 @@ GATK
 TRAMS
 
 Workflow:
+
 1. download/setup 
   1. reference genome (fasta) 
   2. reference GBK
