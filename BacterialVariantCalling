@@ -7,23 +7,19 @@ GATK
 TRAMS
 
 Workflow:
-0) download/setup 
- a) reference genome (fasta) 
- b) reference GBK
- c) dbSNP (or blank.vcf if none)
-
-1) Trimmomatic
+0. download/setup 
+ 1. reference genome (fasta) 
+ 2. reference GBK
+ 3. dbSNP (or blank.vcf if none)
+1. Trimmomatic
 #assuming Truseq3 adapters, single ended, adapt as needed
 ILLUMINACLIP:TruSeq3-SE:2:30:10 LEADING:3 TRAILING:3 MINLEN:75
-
-2)Fastqc
-
-3)BWA mem to reference genome (using read groups)
-
-4) PICARDTOOLS
- a) SortSAM
- b) MarkDuplicates
- c) BuildBamIndex
+2.Fastqc
+3. BWA mem to reference genome (using read groups)
+4. PICARDTOOLS
+ a. SortSAM
+ b. MarkDuplicates
+ c. BuildBamIndex
 
 5) GATK
  a) RealignerTargetCreator
