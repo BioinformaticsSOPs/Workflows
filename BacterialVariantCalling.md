@@ -8,9 +8,9 @@ TRAMS
 
 Workflow:
 1. download/setup 
- 1. reference genome (fasta) 
- 2. reference GBK
- 3. dbSNP (or blank.vcf if none)
+  1. reference genome (fasta) 
+  2. reference GBK
+  3. dbSNP (or blank.vcf if none)
 2. Trimmomatic   #assuming Truseq3 adapters, single ended, adapt as needed ILLUMINACLIP:TruSeq3-SE:2:30:10 LEADING:3 TRAILING:3 MINLEN:75
 3.Fastqc
 4. BWA mem to reference genome (using read groups)
