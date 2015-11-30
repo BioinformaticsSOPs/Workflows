@@ -1,10 +1,11 @@
 #Option 1: GATK Best Practices
 ##Tools:
-Trimmomatic
-FastQC
-PicardTools
-GATK
-TRAMS
+-----------
+Trimmomatic|
+FastQC|
+PicardTools|
+GATK|
+TRAMS|
 
 Workflow:
 
